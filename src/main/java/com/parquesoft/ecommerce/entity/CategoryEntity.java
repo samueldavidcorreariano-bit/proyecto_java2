@@ -17,12 +17,12 @@ public class CategoryEntity {
     private String description;
 
     @Column(name = "is_active", nullable = false)
-    private boolean isActive = true;
+    private Boolean isActive = true;
 
     public CategoryEntity() {
     }
 
-    public CategoryEntity(String name, String description, boolean isActive) {
+    public CategoryEntity(String name, String description, Boolean isActive) {
         this.name = name;
         this.description = description;
         this.isActive = isActive;
@@ -52,11 +52,11 @@ public class CategoryEntity {
         this.description = description;
     }
 
-    public boolean isActive() {
+    public Boolean isActive() {
         return isActive;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         isActive = active;
     }
 }
