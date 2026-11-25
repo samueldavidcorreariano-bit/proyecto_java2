@@ -81,11 +81,9 @@ public class ProductEntity {
         this.stock = stock;
     }
 
-    public boolean isActive() {
-        return isActive;
-    }
+    public Boolean isActive() {return isActive;}
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         isActive = active;
     }
 
